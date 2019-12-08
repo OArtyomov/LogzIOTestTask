@@ -1,4 +1,4 @@
-package com.logzio.transform;
+package com.logzio.service;
 
 import com.logzio.model.PipelineDescriptor;
 import com.logzio.model.ProcessorStep;

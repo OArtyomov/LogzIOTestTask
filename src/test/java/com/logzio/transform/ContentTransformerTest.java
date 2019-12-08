@@ -1,6 +1,7 @@
 package com.logzio.transform;
 
 import com.logzio.model.PipelineDescriptor;
+import com.logzio.service.ContentTransformer;
 import org.junit.Test;
 
 import java.io.File;
