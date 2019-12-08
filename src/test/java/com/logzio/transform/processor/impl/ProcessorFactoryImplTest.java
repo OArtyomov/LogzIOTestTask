@@ -31,7 +31,7 @@ public class ProcessorFactoryImplTest {
 	@Test
 	public void testCreateForNumberOfFields() {
 		final Processor processor = processorFactory.create("CountNumOfFields");
-		assertThat(processor.getClass(), equalTo(CountOfFieldsProcessor.class));
+		assertThat(processor.getClass(), equalTo(CountNumOfFieldsProcessor.class));
 	}
 
 	@Test

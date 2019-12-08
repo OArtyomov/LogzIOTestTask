@@ -13,7 +13,7 @@ public class ProcessorFactoryImpl implements ProcessorFactory {
 			case "RemoveField":
 				return new RemoveFieldProcessor();
 			case "CountNumOfFields":
-				return new CountOfFieldsProcessor();
+				return new CountNumOfFieldsProcessor();
 			default:
 				throw new RuntimeException("No processor for processorName: " + processorName);
 		}
