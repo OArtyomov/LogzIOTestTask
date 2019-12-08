@@ -1,7 +1,7 @@
 package com.logzio.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.logzio.model.PipelineDescriptor;
+import com.logzio.transform.model.PipelineDescriptor;
 
 import java.io.File;
 import java.io.IOException;

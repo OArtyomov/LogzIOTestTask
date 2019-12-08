@@ -1,7 +1,7 @@
 package com.logzio.service;
 
-import com.logzio.model.PipelineDescriptor;
-import com.logzio.model.ProcessorStep;
+import com.logzio.transform.model.PipelineDescriptor;
+import com.logzio.transform.model.ProcessorStep;
 import com.logzio.transform.processor.core.Processor;
 import com.logzio.transform.processor.core.ProcessorFactory;
 import com.logzio.transform.processor.impl.ProcessorFactoryImpl;

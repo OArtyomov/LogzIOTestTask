@@ -1,4 +1,4 @@
-package com.logzio.model;
+package com.logzio.transform.model;
 
 import lombok.Getter;
 import lombok.Setter;
