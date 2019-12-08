@@ -13,8 +13,8 @@ public class ContentTransformerTest {
 
 	@Test
 	public void testTransform() {
-	    ContentTransformer contentTransformer = new ContentTransformer();
-	    File sourceFile = new File("/home/osboxes/projects/LogzIO/LogzIOTestTask/src/test/resources/sourceFile.json");
+		ContentTransformer contentTransformer = new ContentTransformer();
+		File sourceFile = new File("/home/osboxes/projects/LogzIO/LogzIOTestTask/src/test/resources/pipelineFile.json");
 		final PipelineDescriptor transform = contentTransformer.transform(sourceFile);
 		assertThat(transform, notNullValue());
 	}

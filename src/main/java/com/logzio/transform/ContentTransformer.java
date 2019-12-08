@@ -5,6 +5,7 @@ import com.logzio.model.PipelineDescriptor;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 
 public class ContentTransformer {
 
@@ -13,6 +14,14 @@ public class ContentTransformer {
 	public PipelineDescriptor transform(File sourceFile) {
 		try {
 			return mapper.readValue(sourceFile, PipelineDescriptor.class);
+		} catch (IOException e) {
+			throw new IllegalArgumentException(e);
+		}
+	}
+
+	public HashMap<String, Object> readFile(File sourceFile){
+		try {
+			return mapper.readValue(sourceFile, HashMap.class);
 		} catch (IOException e) {
 			throw new IllegalArgumentException(e);
 		}
