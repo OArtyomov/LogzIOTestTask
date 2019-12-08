@@ -4,7 +4,7 @@ import com.logzio.transform.processor.core.Processor;
 
 import java.util.Map;
 
-public class NumOfFieldsProcessor implements Processor {
+public class CountOfFieldsProcessor implements Processor {
 	private Map<String, String> configuration;
 
 	@Override

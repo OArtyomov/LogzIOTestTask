@@ -6,15 +6,17 @@ import com.logzio.transform.processor.core.ProcessorFactory;
 public class ProcessorFactoryImpl implements ProcessorFactory {
 	@Override
 	public Processor create(String processorName) {
-		if (processorName.equals("AddField")) {
-			return new AddFieldProcessor();
+
+		switch (processorName) {
+			case "AddField":
+				return new AddFieldProcessor();
+			case "RemoveField":
+				return new RemoveFieldProcessor();
+			case "CountNumOfFields":
+				return new CountOfFieldsProcessor();
+			default:
+				throw new RuntimeException("No processor for processorName: " + processorName);
 		}
-		if (processorName.equals("RemoveField")) {
-			return new RemoveFieldProcessor();
-		}
-		if (processorName.equals("CountNumOfFields")) {
-			return new NumOfFieldsProcessor();
-		}
-		throw new RuntimeException("No processor for processorName: " + processorName);
+
 	}
 }
