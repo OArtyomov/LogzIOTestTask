@@ -9,7 +9,11 @@ import java.util.HashMap;
 
 public class ContentTransformer {
 
-	private static final ObjectMapper mapper = new ObjectMapper();
+	private static final ObjectMapper mapper = buildObjectMapper();
+
+	private static ObjectMapper buildObjectMapper() {
+		return new ObjectMapper();
+	}
 
 	public PipelineDescriptor transform(File sourceFile) {
 		try {
