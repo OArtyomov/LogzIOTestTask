@@ -16,7 +16,7 @@ public class PipelineExecutor {
 	public void transform(PipelineDescriptor pipelineDescriptor,
 						  Map<String, Object> jsonDocument) {
 		if (pipelineDescriptor.getSteps() != null) {
-			pipelineDescriptor.getSteps().stream().forEach(step -> processStep(step, jsonDocument));
+			pipelineDescriptor.getSteps().forEach(step -> processStep(step, jsonDocument));
 		}
 	}
 
