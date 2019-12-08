@@ -5,6 +5,7 @@ import com.logzio.transform.processor.core.Processor;
 import java.util.Map;
 
 public class AddFieldProcessor implements Processor {
+
 	private Map<String, String> configuration;
 
 	@Override
@@ -14,6 +15,6 @@ public class AddFieldProcessor implements Processor {
 
 	@Override
 	public void process(Map<String, Object> jsonDocument) {
-		jsonDocument.put(configuration.get("fieldName"), configuration.get("fieldValue"));
+		jsonDocument.put(configuration.get(ProcessorConstants.FIELD_NAME), configuration.get(ProcessorConstants.FIELD_VALUE));
 	}
 }
