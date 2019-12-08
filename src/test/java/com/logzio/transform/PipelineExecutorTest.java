@@ -24,7 +24,7 @@ public class PipelineExecutorTest {
 		executor.transform(transform, sourceData);
 
 		assertThat(sourceData.get("userSurname"), equalTo("Preston"));
-		assertThat(sourceData.get("numOfFields"), equalTo(2));
+		assertThat(sourceData.get("numOfFields"), equalTo(3));
 		assertThat(sourceData.get("accountName"), equalTo("Facebook"));
 		assertThat(sourceData.size(), equalTo(3));
 	}

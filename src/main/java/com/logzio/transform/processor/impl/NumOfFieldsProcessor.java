@@ -14,6 +14,6 @@ public class NumOfFieldsProcessor implements Processor {
 
 	@Override
 	public void process(Map<String, Object> jsonDocument) {
-		jsonDocument.put(configuration.get("targetFieldName"), jsonDocument.size());
+		jsonDocument.put(configuration.get("targetFieldName"), (jsonDocument.size() + 1));
 	}
 }
